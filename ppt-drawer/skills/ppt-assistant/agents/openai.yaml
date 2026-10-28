@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT 助手"
+  short_description: "读取项目材料并安排内容和版式，先审阅三页样稿后再制作可编辑整稿"
+  default_prompt: "使用 $ppt-assistant 根据当前项目材料制作汇报，先给我大纲和三页样稿。"

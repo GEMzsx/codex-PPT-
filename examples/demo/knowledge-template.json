@@ -1,0 +1,6 @@
+[
+  {"id":"demo-boundary","kind":"background","text":"所有计时均为软件验证构造数据；不能作为科研实验或用户项目结果。","source_ids":["$project"]},
+  {"id":"demo-measurements","kind":"project_result","text":"示例三次A为18、20、16分钟，B为12、14、10分钟，每对相差6分钟；均值分别18与12分钟。","source_ids":["$data","$project"]},
+  {"id":"demo-workflow","kind":"background","text":"演示分为资料整理、内容策划、版式制作、检查复盘四个环节。","source_ids":["$project"]},
+  {"id":"demo-research-gap","kind":"gap","text":"真实论文、研究问题、实验结果和科研内容适配尚待用户提供并验收。","source_ids":[]}
+]

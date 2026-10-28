@@ -1,0 +1,1 @@
+-r ppt-drawer/requirements.txt

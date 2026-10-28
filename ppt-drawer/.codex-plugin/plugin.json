@@ -1,0 +1,15 @@
+{
+  "name": "ppt-drawer",
+  "version": "0.1.0",
+  "description": "根据项目材料与指定模板制作可编辑 PPT，先审阅大纲与三页样稿，再生成整稿并复盘。",
+  "skills": "./skills",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "PPT 助手",
+    "shortDescription": "项目知识、模板排版与可编辑PPT",
+    "longDescription": "在调用项目内建立有来源的知识库，协调内容、版式、制作和检查角色；列明联网补充，审阅三页样稿后再制作整稿。",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "使用 $ppt-assistant 根据当前项目材料制作汇报，先给我大纲与三页样稿。"
+  }
+}

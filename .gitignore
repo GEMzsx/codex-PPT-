@@ -1,0 +1,8 @@
+tmp/
+dist/
+output/
+node_modules/
+__pycache__/
+*.pyc
+.ppt-assistant/
+.ppt-drawer-build-*/

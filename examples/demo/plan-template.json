@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "title": "PPT 助手技术演示：构造数据",
+  "style": "bluegray_charts",
+  "style_reason": "按示例要求选择蓝灰图表风格，16:9；适合流程、精确数值与比较说明。借用的版式统一为蓝灰标题和深蓝顶线；本演示重建页面，未声明复用原稿母版。",
+  "sample_slide_ids": [
+    "scope",
+    "workflow",
+    "measurements"
+  ],
+  "slides": [
+    {
+      "id": "cover",
+      "title": "PPT 助手技术演示",
+      "layout": "cover",
+      "takeaway": "构造数据，仅用于验证软件流程与排版",
+      "source_ids": [
+        "$project"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "项目材料、审阅确认与可编辑演示文稿"
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "本演示比较什么",
+      "layout": "two-column",
+      "takeaway": "材料仅提供两个方案的名称与三对构造计时",
+      "source_ids": [
+        "$project",
+        "$data"
+      ],
+      "blocks": [
+        {
+          "type": "table",
+          "headers": [
+            "对象",
+            "已提供信息"
+          ],
+          "rows": [
+            [
+              "方案A",
+              "三次计时18、20、16分钟"
+            ],
+            [
+              "方案B",
+              "三次计时12、14、10分钟"
+            ]
+          ],
+          "source_id": "$data"
+        },
+        {
+          "type": "text",
+          "items": [
+            "两者都是资料整理方案",
+            "具体操作差异未提供",
+            "只描述本组示例数据"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "title": "材料与事实边界",
+      "layout": "two-column",
+      "takeaway": "示例事实来自说明文件和CSV，合成图片仅演示摆放",
+      "source_ids": [
+        "$project",
+        "$figure"
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "path": "$figure_path",
+          "caption": "合成测试图片，仅演示位图摆放",
+          "source_id": "$figure"
+        },
+        {
+          "type": "text",
+          "items": [
+            "计时数据由软件测试构造",
+            "研究论文与真实实验结果尚未提供",
+            "合成图片不作为项目事实依据"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow",
+      "title": "演示工作流",
+      "layout": "process",
+      "takeaway": "样稿后保留审阅环节，完成阶段留下复盘",
+      "source_ids": [
+        "$project"
+      ],
+      "blocks": [
+        {
+          "type": "process",
+          "steps": [
+            {
+              "title": "资料整理",
+              "text": "建立项目来源"
+            },
+            {
+              "title": "内容策划",
+              "text": "形成逐页方案"
+            },
+            {
+              "title": "版式制作",
+              "text": "先看三页样稿"
+            },
+            {
+              "title": "检查复盘",
+              "text": "核对证据与编辑能力"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "measurements",
+      "title": "构造计时数据",
+      "layout": "chart-table",
+      "takeaway": "三对示例中，方案B均比A少6分钟",
+      "source_ids": [
+        "$data"
+      ],
+      "blocks": [
+        {
+          "type": "chart",
+          "chart_type": "bar",
+          "title": "示例计时（分钟）",
+          "categories": [
+            "第1次",
+            "第2次",
+            "第3次"
+          ],
+          "series": [
+            {
+              "name": "方案A",
+              "values": [
+                18,
+                20,
+                16
+              ]
+            },
+            {
+              "name": "方案B",
+              "values": [
+                12,
+                14,
+                10
+              ]
+            }
+          ],
+          "source_id": "$data"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "次序",
+            "A/分钟",
+            "B/分钟",
+            "差值"
+          ],
+          "rows": [
+            [
+              1,
+              18,
+              12,
+              6
+            ],
+            [
+              2,
+              20,
+              14,
+              6
+            ],
+            [
+              3,
+              16,
+              10,
+              6
+            ],
+            [
+              "均值",
+              18,
+              12,
+              6
+            ]
+          ],
+          "source_id": "$data"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "title": "技术验证与待验内容",
+      "layout": "summary",
+      "takeaway": "真实科研内容与项目适配需在论文材料到位后验收",
+      "source_ids": [
+        "$project"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "items": [
+            "技术演示检查材料、来源与审阅门槛",
+            "原生图表、表格和文字需要独立核对",
+            "真实论文解读和科学结论属于后续验收"
+          ]
+        }
+      ]
+    }
+  ]
+}
